@@ -1,5 +1,4 @@
 class Player:
-    """Class creates a Player"""
     def __init__(self, name, human=False):
         self.name = name
         self.active = False
