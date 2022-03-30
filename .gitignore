@@ -1,0 +1,9 @@
+*.ipynb
+/__pycache__
+/gin_rummy_ref
+/old
+card_vs2.__py
+/.mypy_cache
+/docs
+melds_tester.py 
+.pylintrc

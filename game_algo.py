@@ -225,10 +225,10 @@ def choose_card_to_drop(player):
     return player.hand.cards[card_to_drop-1]
 
 
-def find_discard_card(current_discard: Card, deadwood: list, active_player: Player) -> Card:
+def find_discard_card(current_discard: Card, active_player: Player) -> Card:
     """Function evaluates which card to remove from a sequence of cards"""
     card_status = []
-    for card in deadwood:
+    for card in active_player.hand.deadwood:
         if card.id != current_discard.id:
             card_status.append(card)
     card_status.sort(key=lambda x: x.status)
